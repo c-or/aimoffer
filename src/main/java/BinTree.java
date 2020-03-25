@@ -7,6 +7,8 @@ public class BinTree {
     public BinTree(Integer[] a){
         this.a = a;
     }
+
+
     public TreeNode createTree(){
         for (Integer i=0;i<a.length;i++){
             if (a[i]!=null) {

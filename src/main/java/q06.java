@@ -14,7 +14,7 @@ public class q06 {
         int length = stack.size();
         int[] nodes = new int[length];
         for (int i=0;i<length;i++) {
-            nodes[i] = stack.get(i).val;
+            nodes[length-1-i] = stack.get(i).val;
         }
         return nodes;
     }
@@ -24,7 +24,10 @@ public class q06 {
         ListNode listNode = new LinkList(list).CreateList();
         q06 q06 = new q06();
         int[] ints = q06.reversePrint(listNode);
-        System.out.println(ints);
+        for (int i :
+                ints) {
+            System.out.println(i);
+        }
     }
 
 }
